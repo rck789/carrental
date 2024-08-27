@@ -1,0 +1,122 @@
+/* components/SubscribeApp.module.css */
+
+.susCont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .susInputs h2 {
+    grid-column: span 2;
+  }
+  
+  .inputs {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
+    flex-wrap: wrap;
+  }
+  
+  .inputField {
+    background-color: #f8f8f8;
+    height: 3em;
+    border: #f8f8f8 0px solid;
+    border-radius: 5px;
+    flex: 1 1 45%;
+    min-width: 150px;
+  }
+  
+  .phoneInput {
+    width: 18em;
+  }
+  
+  .susApps {
+    background-color: #e21e26;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .appImage {
+    max-width: 70%;
+  }
+  
+  .appDetails {
+    text-align: left;
+    max-width: 300px;
+    margin-left: 20px;
+  }
+  
+  .appstoreBtns img {
+    width: 100%;
+    max-width: 6em;
+    margin-right: 10px;
+  }
+  
+  .subscribeBtn {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    width: 100%;
+    max-width: 36em;
+    height: 2.5em;
+    border-radius: 5px;
+  }
+  
+  .getLinkBtn {
+    background-color: #000000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 2em;
+    height: 2.5em;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .susCont {
+      grid-template-columns: 1fr;
+      text-align: center;
+      padding: 1rem 2rem;
+    }
+  
+    .susApps {
+      flex-direction: column;
+      padding: 20px;
+      border-radius: 8px;
+    }
+  
+    .appDetails {
+      margin-left: 0;
+      max-width: 100%;
+      padding: 0;
+      text-align: center;
+    }
+  
+    .inputs {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .appstoreBtns {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+  
+    .appstoreBtns img {
+      width: 100%;
+      max-width: 12em;
+      margin: 5px 0;
+    }
+  }
+  

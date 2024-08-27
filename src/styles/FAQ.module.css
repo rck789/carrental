@@ -1,0 +1,80 @@
+/* FAQ Styling */
+.faqCard {
+    width: 100%;
+    margin: 0 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    border: 3px solid #fff;
+  }
+  
+  .accordion {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    margin-right: 2em;
+    outline: none;
+    transition: 0.4s;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+  }
+  
+  .active,
+  .accordion:hover {
+    background-color: #fff;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-bottom: 3px solid #cdd6da40;
+  }
+  
+  .panel p {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24.71px;
+    opacity: 0.5;
+  }
+  
+  /* Accordion Icon */
+  .accordion:after {
+    content: "\02795";
+    font-size: 13px;
+    float: right;
+    margin-right: 5px;
+    color: #000;
+  }
+  
+  .active:after {
+    content: "\2796";
+    margin-right: 5px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .faqCard {
+      margin: 0;
+      padding: 0;
+    }
+  
+    .accordion {
+      font-size: 14px;
+      padding: 15px;
+    }
+  
+    .panel p {
+      font-size: 12px;
+      line-height: 15.66px;
+    }
+  }
+  
