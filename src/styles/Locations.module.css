@@ -1,5 +1,5 @@
 .locations {
-    padding: 0 64px;
+    padding: 0 1em;
     margin: 0 auto;
     background-color: #000000;
     color: #ffffff;
@@ -8,13 +8,13 @@
   }
   
   .locations h2 {
-    padding: 56px 0;
+    padding: 1em 0;
     text-align: center;
   }
   
   .locs {
     overflow-x: auto;
-    padding-bottom: 110px;
+    padding-bottom: 2em;
   }
   
   .locs ul {

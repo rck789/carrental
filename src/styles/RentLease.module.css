@@ -23,8 +23,12 @@
 
 .rentLeaseCard {
   border: 1px solid #000000;
-  width: 348px;
-  height: 178px;
+  /* width: 348px; */
+  /* height: 178px; */
+  width: 100%;
+  max-width: 25em;
+  min-width: 25em;
+  min-height: 15em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,6 +38,8 @@
 
 .rentLeaseImage {
   margin-bottom: 10px;
+  width: 15%;
+  height: auto;
 }
 
 .rentLeaseText {
@@ -59,6 +65,11 @@
     flex-wrap: nowrap;
   }
 
+  .rentLeaseCard {
+    max-width: 0;
+    width: 100%;
+  }
+
   .rentLeaseText {
     font-family: Helvetica, sans-serif;
     font-size: 14px;
@@ -74,5 +85,6 @@
     font-family: Poppins, sans-serif;
     font-weight: 400;
     text-align: left;
+    margin: .5em 0;
   }
 }

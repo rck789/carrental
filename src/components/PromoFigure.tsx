@@ -8,7 +8,6 @@ const PromoFigure = () => {
       <figcaption>
         <div className={styles.captionContent}>
           Receive guaranteed on a monthly hire or lease
-          <br />
           <button className={styles.shopNowBtn}>Gift Voucher</button>
         </div>
       </figcaption>

@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from 'react';
-import Link from 'next/link';
-import styles from '../styles/Header.module.css';
+import React, { useEffect, useRef } from "react";
+import Link from "next/link";
+import styles from "../styles/Header.module.css";
 
 export const Header = () => {
   const mobileMenuRef = useRef<HTMLDivElement | null>(null);
@@ -28,20 +28,20 @@ export const Header = () => {
     };
 
     if (mobileMenu) {
-      mobileMenu.addEventListener('click', handleMenuToggle);
+      mobileMenu.addEventListener("click", handleMenuToggle);
     }
 
     if (overlay) {
-      overlay.addEventListener('click', handleOverlayClick);
+      overlay.addEventListener("click", handleOverlayClick);
     }
 
     // Cleanup event listeners on component unmount
     return () => {
       if (mobileMenu) {
-        mobileMenu.removeEventListener('click', handleMenuToggle);
+        mobileMenu.removeEventListener("click", handleMenuToggle);
       }
       if (overlay) {
-        overlay.removeEventListener('click', handleOverlayClick);
+        overlay.removeEventListener("click", handleOverlayClick);
       }
     };
   }, []);
@@ -118,9 +118,9 @@ export const Header = () => {
         </div>
         <p className={styles.navmsg}>
           <span>
-            Sunday Pick Up/Drop-Off only at Dubai Silicon Oasis &amp; Habtoor Grand
-            Sales Counters | All Rates inclusive of VAT. T&amp;C’s apply | Follow us
-            on Social Media for New Offers
+            Sunday Pick Up/Drop-Off only at Dubai Silicon Oasis &amp; Habtoor
+            Grand Sales Counters | All Rates inclusive of VAT. T&amp;C’s apply |
+            Follow us on Social Media for New Offers
           </span>
         </p>
       </header>
